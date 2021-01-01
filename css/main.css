@@ -1,0 +1,28 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-image: url("../img/wallhaven-q2dr87_1920x1080.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 640px) {
+    body {
+        background-image: url("../img/pexels-eberhard-grossgasteiger-1366919.jpg");
+    }
+}
+.navbar.navbar-expand-lg.navbar-light {
+    background-color: transparent;
+}
+.navbar-logo {
+    height: 50px;
+    width: 150px;
+}
+@media (max-width: 640px) {
+    .navbar-logo {
+        height: 50px;
+        width: 100px;
+    }
+}

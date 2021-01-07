@@ -9,8 +9,8 @@ body {
   background-color: #202020;
 }
 .navbar-items-container {
-  width: 100%;
   justify-content: flex-end;
+  width: 100%;
 }
 .navbar-logo {
   height: 50px;
@@ -34,10 +34,15 @@ body {
   color: #24adf2;
   font-size: 1.7rem;
 }
-
 aside {
   background-color: #202020;
   border-radius: 8px;
+}
+@media (min-width: 640px) {
+  aside {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
 }
 .project {
     position: relative;

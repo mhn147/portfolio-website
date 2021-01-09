@@ -10,16 +10,19 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
     <title>Hamouda's</title>
   </head>
   <body>
-    <div class="navbar-wrapper">
+    <!-- Navbar -->
+    <div class="less-dark-background-color">
       <nav class="container navbar navbar-expand-lg navbar-dark p-1">
         <div class="container-fluid">
           <a class="navbar-brand brand" href="#">
-            <span class="code-symbol">&lt;</span>Hamouda's<span
-              class="code-symbol"
+            <span class="code-symbol accent-color">&lt;</span>Hamouda's<span
+              class="code-symbol accent-color"
               >/&gt;</span
             >
           </a>
@@ -68,24 +71,47 @@
         </div>
       </nav>
     </div>
+    <!-- End Navbar -->
 
+    <!-- Main -->
     <div class="container my-5">
       <div class="row">
-        <main class="col-md-8 col-sm-12">One of three columns</main>
-        <aside class="col-md-4 col-sm-12 p-4 text-light">
+        <main class="col-md-8 col-sm-12">
+          <div class="main-container">
+            <video playsinline autoplay muted loop id="main-bgvid">
+              <source src="/img/production-ID_4443250.mp4" type="video/mp4" />
+            </video>
+            <div class="main-content p-2">
+              <h1 class="name text-center mb-0">Mohamed Nasri</h1>
+              <h3 class="title text-center mt-0">Fullstack Web Developer</h3>
+            </div>
+          </div>
+        </main>
+        <aside
+          class="col-md-4 col-sm-12 p-4 text-light less-dark-background-color border-radius"
+        >
           <section class="projects">
             <h2 class="section-header mb-4">My Projects</h2>
-            <article class="project my-2 p-3">
+            <article
+              class="project darker-background-color border-radius my-2 p-3"
+            >
               <h4>Permaflex's Mobile App</h4>
               <p>
-                I was in charge of developing the UI for a client during an intership. I was super excited to use the Ionic(Angular) Framework.
+                I was in charge of developing the UI for a client during an
+                intership. I was super excited to use the Ionic(Angular)
+                Framework.
               </p>
               <img class="project-img" src="/img/Permaflex.svg" alt="" />
               <button class="btn context-menu-toggle">
-                <img class="context-menu-toggle-img" src="/img/contextToggle.svg" />
+                <img
+                  class="context-menu-toggle-img"
+                  src="/img/contextToggle.svg"
+                />
               </button>
             </article>
-            <article class="project my-2 p-3">
+            <article
+              class="project darker-background-color border-radius my-2 p-3"
+            >
               <h4>Tiny PDF</h4>
               <p>
                 This is my most ambitious project. It's a Python Flask app that
@@ -93,26 +119,33 @@
               </p>
               <img class="project-img" src="/img/TinyPDF.svg" alt="" />
               <button class="btn context-menu-toggle">
-                <img class="context-menu-toggle-img" src="/img/contextToggle.svg" />
+                <img
+                  class="context-menu-toggle-img"
+                  src="/img/contextToggle.svg"
+                />
               </button>
             </article>
-            <article class="project my-2 p-3">
+            <article
+              class="project darker-background-color border-radius my-2 p-3"
+            >
               <h4>Easy Past</h4>
               <p>
-                It sounds amazing and complicated, but it's actually not. I used a free web API that shrinks URLs, check it out!
+                It sounds amazing and complicated, but it's actually not. I used
+                a free web API that shrinks URLs, check it out!
               </p>
               <img class="project-img" src="/img/EasyPast.svg" alt="" />
               <button class="btn context-menu-toggle">
-                <img class="context-menu-toggle-img" src="/img/contextToggle.svg" />
+                <img
+                  class="context-menu-toggle-img"
+                  src="/img/contextToggle.svg"
+                />
               </button>
             </article>
           </section>
         </aside>
       </div>
     </div>
-
-    <main></main>
-    <aside></aside>
+    <!-- End Main -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"

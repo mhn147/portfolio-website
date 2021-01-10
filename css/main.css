@@ -21,6 +21,12 @@ body {
 .accent-color {
   color: #24adf2;
 }
+.w-90 {
+  width: 90%;
+}
+.center-block {
+  margin: 0 auto;
+}
 /* End Common */
 
 /* Navbar */
@@ -39,6 +45,9 @@ body {
   height: 2rem;
   width: 2rem;
 }
+.translucent {
+  background-color: rgb(255, 255, 255, 0.5);
+}
 /* End Navbar */
 
 /* Main */
@@ -50,6 +59,12 @@ body {
   main {
     max-height: 80vh;
     overflow-y: auto;
+  }
+}
+@media (max-width: 640px) {
+  aside {
+    width: 95% !important;
+    margin: 2rem auto !important;
   }
 }
 .project {
@@ -72,6 +87,11 @@ main {
   height: 80vh;
   position: relative;
 }
+@media (max-width: 640px) {
+  main {
+    height: 60vh;
+  }
+}
 .main-container {
   position: relative;
   width: 95%;
@@ -92,11 +112,54 @@ main {
   width: 100%;
   z-index: 10;
 }
-.name, .title {
-  font-family: 'Roboto Mono', monospace;
+.name,
+.title {
+  font-family: "Roboto Mono", monospace;
 }
 .name {
   font-size: 3.5rem;
   font-weight: bold;
+}
+@media (max-width: 640px) {
+  .name {
+    font-size: 2.2rem;
+  }
+}
+.tiles-container {
+  height: 85% !important;
+}
+@media (max-width: 640px) {
+  .tiles-container {
+    height: 78% !important;
+  }
+}
+.about-me {
+  overflow-y: auto;
+}
+.roles {
+  display: flex;
+}
+@media (max-width: 640px) {
+  .roles {
+    flex-direction: column;
+  }
+}
+@media (min-width: 640px) {
+  .roles-container {
+    width: 90% !important;
+    margin-left: 1.5rem;
+  }
+}
+@media (max-width: 640px) {
+  .about-me {
+    max-height: 250px !important;
+  }
+}
+@media (min-width: 640px) {
+  .role {
+    height: 32%;
+    max-height: 32%;
+    overflow-y: auto;
+  }
 }
 /* End Main */

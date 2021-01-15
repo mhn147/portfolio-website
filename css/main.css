@@ -7,7 +7,10 @@ body {
   height: 100%;
   background-color: #181818;
 }
-
+main {
+  margin-top: 3.5rem !important;
+  margin-bottom: 3rem !important;
+}
 
 /* Common */
 .border-radius {
@@ -22,13 +25,11 @@ body {
 .accent-color {
   color: #24adf2;
 }
-.w-90 {
-  width: 90%;
-}
-.center-block {
-  margin: 0 auto;
+.translucent {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 /* End Common */
+
 
 /* Navbar */
 .brand {
@@ -46,29 +47,27 @@ body {
   height: 2rem;
   width: 2rem;
 }
-.translucent {
-  /* background-color: rgb(255, 255, 255, 0.5); */
-  background-color: rgba(0, 0, 0, 0.2);
-}
 /* End Navbar */
 
+
 /* Main */
+.about-me {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
 @media (min-width: 640px) {
-  aside, main {
+  .projects, .about-me {
     max-height: 80vh;
     overflow-y: auto;
   }
 }
-main {
-  position: relative;
-}
 @media (max-width: 640px) {
-  main {
+  .about-me {
     height: 60vh;
+    justify-content: center;
   }
-}
-@media (max-width: 640px) {
-  aside {
+  .projects {
     width: 90% !important;
     margin: 2rem auto !important;
   }
@@ -94,10 +93,9 @@ main {
 /* End Project */
 
 /* Main Content */
-.main-container {
+.about-me-container {
   position: relative;
   width: 95%;
-  margin: 0 auto;
   height: 100%;
 }
 #main-bgvid {
@@ -108,7 +106,7 @@ main {
   top: 0;
   left: 0;
 }
-.main-content {
+.about-me-content {
   position: relative;
   height: 100%;
   width: 100%;
@@ -137,7 +135,7 @@ main {
     height: 75% !important;
   }
 }
-.about-me {
+.about-me-text {
   overflow-y: auto;
 }
 .roles-container {
@@ -157,7 +155,7 @@ main {
   }
 }
 @media (max-width: 640px) {
-  .about-me {
+  .about-me-text {
     max-height: 78% !important;
   }
 }

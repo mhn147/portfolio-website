@@ -19,10 +19,9 @@
     <title>Hamouda's</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <div class="less-dark-background-color">
+    <header class="less-dark-background-color">
       <nav class="container navbar navbar-expand-lg navbar-dark p-1">
-        <div class="container-fluid">
+        <div class="container-fluid px-0">
           <a class="navbar-brand brand" href="#">
             <span class="code-symbol accent-color">&lt;</span>Hamouda's<span
               class="code-symbol accent-color"
@@ -73,29 +72,26 @@
           </div>
         </div>
       </nav>
-    </div>
-    <!-- End Navbar -->
+    </header>
 
-    <!-- Main -->
-    <div class="container my-5">
+    <main class="container">
       <div class="row">
-        <main class="col-md-8 col-sm-12">
-          <div class="main-container">
+        <section class="col-md-8 col-sm-12 about-me">
+          <div class="about-me-container">
             <video playsinline autoplay muted loop id="main-bgvid">
               <source src="/img/production-ID_4443250.mp4" type="video/mp4" />
             </video>
-            <div class="main-content p-2">
+            <div class="about-me-content p-2">
               <h1 class="name text-center mb-0">Mohamed Nasri</h1>
               <h3 class="title text-center mt-0">Fullstack Web Developer</h3>
 
               <div class="row my-3 mx-1 tiles-container">
                 <section
-                  class="col-md-8 col-sm-12 about-me border-radius translucent p-2 h-100"
-                >
-                </section>
+                  class="col-md-8 col-sm-12 about-me-text border-radius translucent p-2 h-100"
+                ></section>
                 <section class="col-md-4 col-sm-12 roles-container">
                   <div class="row w-100">
-                    <div class="col-md-12 col-4 role-container pl-0">
+                    <div class="col-md-12 col-4 role-container">
                       <div class="role translucent border-radius">
                         <p>a</p>
                       </div>
@@ -105,7 +101,7 @@
                         <p>a</p>
                       </div>
                     </div>
-                    <div class="col-md-12 col-4 role-container pr-0">
+                    <div class="col-md-12 col-4 role-container">
                       <div class="role translucent border-radius">
                         <p>a</p>
                       </div>
@@ -115,66 +111,80 @@
               </div>
             </div>
           </div>
-        </main>
-        <aside
-          class="col-md-4 col-sm-12 p-4 text-light less-dark-background-color border-radius"
+        </section>
+        <section
+          class="projects col-md-4 col-sm-12 p-4 text-light less-dark-background-color border-radius"
         >
-          <section class="projects">
-            <h2 class="section-header mb-4">My Projects</h2>
-            <article
-              class="project darker-background-color border-radius my-2 p-3"
-            >
-              <h4>Permaflex's Mobile App</h4>
-              <p>
-                I was in charge of developing the UI for a client during an
-                intership. I was super excited to use the Ionic(Angular)
-                Framework.
-              </p>
-              <img class="project-img" src="/img/Permaflex.svg" alt="" />
-              <button class="btn context-menu-toggle">
-                <img
-                  class="context-menu-toggle-img"
-                  src="/img/contextToggle.svg"
-                />
-              </button>
-            </article>
-            <article
-              class="project darker-background-color border-radius my-2 p-3"
-            >
-              <h4>Tiny PDF</h4>
-              <p>
-                This is my most ambitious project. It's a Python Flask app that
-                uses GhostScript to compress PDF files.
-              </p>
-              <img class="project-img" src="/img/TinyPDF.svg" alt="" />
-              <button class="btn context-menu-toggle">
-                <img
-                  class="context-menu-toggle-img"
-                  src="/img/contextToggle.svg"
-                />
-              </button>
-            </article>
-            <article
-              class="project darker-background-color border-radius my-2 p-3"
-            >
-              <h4>Easy Past</h4>
-              <p>
-                It sounds amazing and complicated, but it's actually not. I used
-                a free web API that shrinks URLs, check it out!
-              </p>
-              <img class="project-img" src="/img/EasyPast.svg" alt="" />
-              <button class="btn context-menu-toggle">
-                <img
-                  class="context-menu-toggle-img"
-                  src="/img/contextToggle.svg"
-                />
-              </button>
-            </article>
-          </section>
-        </aside>
+          <h2 class="section-header mb-4">My Projects</h2>
+          <article
+          class="project darker-background-color border-radius my-2 p-3"
+        >
+          <h4>Permaflex's Mobile App</h4>
+          <p>
+            I was in charge of developing the UI for a client during an
+            intership. I was super excited to use the Ionic(Angular)
+            Framework.
+          </p>
+          <img class="project-img" src="/img/Permaflex.svg" alt="" />
+          <button class="btn context-menu-toggle">
+            <img
+              class="context-menu-toggle-img"
+              src="/img/contextToggle.svg"
+            />
+          </button>
+        </article>
+          <article
+            class="project darker-background-color border-radius my-2 p-3"
+          >
+            <h4>Permaflex's Mobile App</h4>
+            <p>
+              I was in charge of developing the UI for a client during an
+              intership. I was super excited to use the Ionic(Angular)
+              Framework.
+            </p>
+            <img class="project-img" src="/img/Permaflex.svg" alt="" />
+            <button class="btn context-menu-toggle">
+              <img
+                class="context-menu-toggle-img"
+                src="/img/contextToggle.svg"
+              />
+            </button>
+          </article>
+          <article
+            class="project darker-background-color border-radius my-2 p-3"
+          >
+            <h4>Tiny PDF</h4>
+            <p>
+              This is my most ambitious project. It's a Python Flask app that
+              uses GhostScript to compress PDF files.
+            </p>
+            <img class="project-img" src="/img/TinyPDF.svg" alt="" />
+            <button class="btn context-menu-toggle">
+              <img
+                class="context-menu-toggle-img"
+                src="/img/contextToggle.svg"
+              />
+            </button>
+          </article>
+          <article
+            class="project darker-background-color border-radius my-2 p-3"
+          >
+            <h4>Easy Past</h4>
+            <p>
+              It sounds amazing and complicated, but it's actually not. I used a
+              free web API that shrinks URLs, check it out!
+            </p>
+            <img class="project-img" src="/img/EasyPast.svg" alt="" />
+            <button class="btn context-menu-toggle">
+              <img
+                class="context-menu-toggle-img"
+                src="/img/contextToggle.svg"
+              />
+            </button>
+          </article>
+        </section>
       </div>
-    </div>
-    <!-- End Main -->
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"

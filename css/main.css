@@ -28,9 +28,6 @@ main {
 .translucent {
   background-color: rgba(0, 0, 0, 0.2);
 }
-.cta-btn {
-  border-radius: 290486px !important;
-}
 /* End Common */
 
 /* Navbar */
@@ -50,7 +47,7 @@ main {
   height: 2rem;
   width: 2rem;
 }
-.nav-link {
+.nav-link, .cta-btn {
   font-size: 1.4rem;
   display: inline-block !important;
 }
@@ -64,9 +61,19 @@ main {
 }
 /* End Navbar */
 
-.hero-container {
-  
+/* Carousel */
+.carousel-item {
+  height: 22rem;
 }
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 22rem;
+}
+/* End Carousel */
+
 
 .personal-pic-img {
   height: 150px;
@@ -76,5 +83,12 @@ main {
 @media (max-width: 40rem) {
   .personal-pic-img {
     margin-top: 1rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .projects-container {
+    max-height: 82vh !important;
+    overflow-y: auto;
   }
 }

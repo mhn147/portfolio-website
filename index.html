@@ -36,14 +36,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-items-container">
-              <li class="nav-item text-center mx-1">
-                <a class="nav-link text-white" href="https://github.com/mhn147">
-                  About Me
-                </a>
-              </li>
               <li class="nav-item text-center">
                 <a
-                  class="nav-link text-white btn btn-outline-primary p-2 cta-btn"
+                  class="btn btn-outline-light p-2 cta-btn"
                   href="https://github.com/mhn147"
                 >
                   Contact
@@ -64,7 +59,7 @@
                 class="hero m-2 round-border text-white p-5 less-dark-background-color"
               >
                 <h1 class="text-center mb-4">
-                  Hello. <span class="text-primary"></span>I'm Mohamed
+                  Hello. <span class="text-primary"></span>I'm Mohamed ;)
                 </h1>
                 <div class="row">
                   <div class="col-12 col-sm-8 about-me-container">
@@ -98,18 +93,43 @@
                 </div>
               </section>
             </div>
-            <section class="col-12"></section>
+            <div class="col-12 skills-container">
+              <section id="skills" class="my-2 round-border p-2 text-white">
+                <h2 class="text-center text-white mb-2">Skills</h2>
+                <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="bd-placeholder-img" src="img/Dark-bg.svg" width="100%" height="100%"  alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="bd-placeholder-img" src="img/Dark-bg2.svg" width="100%" height="100%"  alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="bd-placeholder-img" src="img/Dark-bg3.svg" width="100%" height="100%"  alt="">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#skillsCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#skillsCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
         <div class="col-12 col-sm-4 projects-container">
           <section
-            class="projects m-2 round-border text-white p-5 less-dark-background-color"
+            class="projects m-2 round-border text-white py-5 px-4 less-dark-background-color"
           >
             <h2 class="text-center mb-4">Projects</h2>
             
             <div class="row">
               <div class="col-12 p-0">
-                <div class="card darker-background-color">
+                <div class="project card darker-background-color">
                   <div class="card-body">
                     <h3 class="text-white text-center">TinyPDF</h3>
                     <p class="card-text text-white">
@@ -117,10 +137,58 @@
                     </p>
                     <div class="d-flex justify-content-center align-items-center">
                       <div class="btn-group">
-                        <a type="button" class="btn btn-sm btn-outline-primary"
+                        <a type="button" class="btn btn-outline-light"
                           href="https://tinypdf.hamouda.tn">Live</a>
-                          <a type="button" class="btn btn-sm btn-outline-primary"
+                          <a type="button" class="btn btn-outline-light"
                             href="https://github.com/mhn147/tinyPDF">Code</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project mt-3 card darker-background-color">
+                  <div class="card-body">
+                    <h3 class="text-white text-center">EasyPast</h3>
+                    <p class="card-text text-white">
+                      It sounds amazing and complicated, but it's actually not. I used a free web API that shrinks URLs, check it out!
+                    </p>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div class="btn-group">
+                        <a type="button" class="btn btn-outline-light"
+                          href="https://easy-past-v3.netlify.app/">Live</a>
+                          <a type="button" class="btn btn-outline-light"
+                            href="https://github.com/mhn147/easy-past">Code</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project mt-3 card darker-background-color">
+                  <div class="card-body">
+                    <h3 class="text-white text-center">EasyPast</h3>
+                    <p class="card-text text-white">
+                      It sounds amazing and complicated, but it's actually not. I used a free web API that shrinks URLs, check it out!
+                    </p>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div class="btn-group">
+                        <a type="button" class="btn btn-outline-light"
+                          href="https://easy-past-v3.netlify.app/">Live</a>
+                          <a type="button" class="btn btn-outline-light"
+                            href="https://github.com/mhn147/easy-past">Code</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project mt-3 card darker-background-color">
+                  <div class="card-body">
+                    <h3 class="text-white text-center">EasyPast</h3>
+                    <p class="card-text text-white">
+                      It sounds amazing and complicated, but it's actually not. I used a free web API that shrinks URLs, check it out!
+                    </p>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div class="btn-group">
+                        <a type="button" class="btn btn-outline-light"
+                          href="https://easy-past-v3.netlify.app/">Live</a>
+                          <a type="button" class="btn btn-outline-light"
+                            href="https://github.com/mhn147/easy-past">Code</a>
                       </div>
                     </div>
                   </div>

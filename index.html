@@ -10,11 +10,6 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Hamouda's</title>
   </head>
@@ -23,8 +18,8 @@
       <nav class="container navbar navbar-expand-lg navbar-dark p-1">
         <div class="container-fluid px-0">
           <a class="navbar-brand brand" href="#">
-            <span class="code-symbol accent-color">&lt;</span>Hamouda's<span
-              class="code-symbol accent-color"
+            <span class="text-primary">&lt;</span>Hamouda's<span
+              class="text-primary"
               >/&gt;</span
             >
           </a>
@@ -41,31 +36,17 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-items-container">
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/mhn147">
-                  <img
-                    class="navbar-link-logo-img"
-                    src="/img/github-logo.png"
-                    alt=""
-                  />
+              <li class="nav-item text-center mx-1">
+                <a class="nav-link text-white" href="https://github.com/mhn147">
+                  About Me
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/mhnasri/">
-                  <img
-                    class="navbar-link-logo-img"
-                    src="/img/linkedIn-logo.png"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://twitter.com/mhn_147">
-                  <img
-                    class="navbar-link-logo-img"
-                    src="/img/twitter-logo.png"
-                    alt=""
-                  />
+              <li class="nav-item text-center">
+                <a
+                  class="nav-link text-white btn btn-outline-primary p-2 cta-btn"
+                  href="https://github.com/mhn147"
+                >
+                  Contact
                 </a>
               </li>
             </ul>
@@ -74,115 +55,80 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="container my-5">
       <div class="row">
-        <section class="col-md-8 col-sm-12 about-me">
-          <div class="about-me-container">
-            <video playsinline autoplay muted loop id="main-bgvid">
-              <source src="/img/production-ID_4443250.mp4" type="video/mp4" />
-            </video>
-            <div class="about-me-content p-2">
-              <h1 class="name text-center mb-0">Mohamed Nasri</h1>
-              <h3 class="title text-center mt-0">Fullstack Web Developer</h3>
-
-              <div class="row my-3 mx-1 tiles-container">
-                <section
-                  class="col-md-8 col-sm-12 about-me-text border-radius translucent p-2 h-100"
-                ></section>
-                <section class="col-md-4 col-sm-12 roles-container">
-                  <div class="row w-100">
-                    <div class="col-md-12 col-4 role-container">
-                      <div class="role translucent border-radius">
-                        <p>a</p>
-                      </div>
-                    </div>
-                    <div class="col-md-12 col-4 role-container">
-                      <div class="role translucent border-radius">
-                        <p>a</p>
-                      </div>
-                    </div>
-                    <div class="col-md-12 col-4 role-container">
-                      <div class="role translucent border-radius">
-                        <p>a</p>
+        <div class="col-12 col-sm-8">
+          <div class="row">
+            <div class="col-12 hero-container">
+              <section
+                class="hero m-2 round-border text-white p-5 less-dark-background-color"
+              >
+                <h1 class="text-center mb-4">
+                  Hello. <span class="text-primary"></span>I'm Mohamed
+                </h1>
+                <div class="row">
+                  <div class="col-12 col-sm-8 about-me-container">
+                    <section id="about-me">
+                      <p>
+                        Hi there! My name is Mohamed Nasri and I’m a FullStack
+                        Web Developer. I’m based in Tunis, Tunisia and I’m
+                        looking for a dev role.
+                      </p>
+                      <p>
+                        My Fascination with computers and software has led me to
+                        become a developer.
+                      </p>
+                      <p>
+                        I enjoy Coding and find it a fulfilling activity and I'm
+                        always looking forward to learn or build something new.
+                      </p>
+                    </section>
+                  </div>
+                  <div class="col-12 col-sm-4 personal-pic-container">
+                    <section
+                      class="personal-pic d-flex h-100 justify-content-center align-items-center"
+                    >
+                      <img
+                        class="personal-pic-img"
+                        src="img/personalPic.jpg"
+                        alt="personal picture"
+                      />
+                    </section>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <section class="col-12"></section>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 projects-container">
+          <section
+            class="projects m-2 round-border text-white p-5 less-dark-background-color"
+          >
+            <h2 class="text-center mb-4">Projects</h2>
+            
+            <div class="row">
+              <div class="col-12 p-0">
+                <div class="card darker-background-color">
+                  <div class="card-body">
+                    <h3 class="text-white text-center">TinyPDF</h3>
+                    <p class="card-text text-white">
+                      This is my most ambitious project. It's a Python Flask app that uses GhostScript to compress PDF files.
+                    </p>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div class="btn-group">
+                        <a type="button" class="btn btn-sm btn-outline-primary"
+                          href="https://tinypdf.hamouda.tn">Live</a>
+                          <a type="button" class="btn btn-sm btn-outline-primary"
+                            href="https://github.com/mhn147/tinyPDF">Code</a>
                       </div>
                     </div>
                   </div>
-                </section>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section
-          class="projects col-md-4 col-sm-12 p-4 text-light less-dark-background-color border-radius"
-        >
-          <h2 class="section-header mb-4">My Projects</h2>
-          <article
-          class="project darker-background-color border-radius my-2 p-3"
-        >
-          <h4>Permaflex's Mobile App</h4>
-          <p>
-            I was in charge of developing the UI for a client during an
-            intership. I was super excited to use the Ionic(Angular)
-            Framework.
-          </p>
-          <img class="project-img" src="/img/Permaflex.svg" alt="" />
-          <button class="btn context-menu-toggle">
-            <img
-              class="context-menu-toggle-img"
-              src="/img/contextToggle.svg"
-            />
-          </button>
-        </article>
-          <article
-            class="project darker-background-color border-radius my-2 p-3"
-          >
-            <h4>Permaflex's Mobile App</h4>
-            <p>
-              I was in charge of developing the UI for a client during an
-              intership. I was super excited to use the Ionic(Angular)
-              Framework.
-            </p>
-            <img class="project-img" src="/img/Permaflex.svg" alt="" />
-            <button class="btn context-menu-toggle">
-              <img
-                class="context-menu-toggle-img"
-                src="/img/contextToggle.svg"
-              />
-            </button>
-          </article>
-          <article
-            class="project darker-background-color border-radius my-2 p-3"
-          >
-            <h4>Tiny PDF</h4>
-            <p>
-              This is my most ambitious project. It's a Python Flask app that
-              uses GhostScript to compress PDF files.
-            </p>
-            <img class="project-img" src="/img/TinyPDF.svg" alt="" />
-            <button class="btn context-menu-toggle">
-              <img
-                class="context-menu-toggle-img"
-                src="/img/contextToggle.svg"
-              />
-            </button>
-          </article>
-          <article
-            class="project darker-background-color border-radius my-2 p-3"
-          >
-            <h4>Easy Past</h4>
-            <p>
-              It sounds amazing and complicated, but it's actually not. I used a
-              free web API that shrinks URLs, check it out!
-            </p>
-            <img class="project-img" src="/img/EasyPast.svg" alt="" />
-            <button class="btn context-menu-toggle">
-              <img
-                class="context-menu-toggle-img"
-                src="/img/contextToggle.svg"
-              />
-            </button>
-          </article>
-        </section>
+          </section>
+        </div>
       </div>
     </main>
 

@@ -61,20 +61,6 @@ main {
 }
 /* End Navbar */
 
-/* Carousel */
-.carousel-item {
-  height: 22rem;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 22rem;
-}
-/* End Carousel */
-
-
 .personal-pic-img {
   height: 150px;
   width: 150px;
@@ -90,5 +76,23 @@ main {
   .projects-container {
     max-height: 82vh !important;
     overflow-y: auto;
+  }
+}
+
+.skill-container {
+  height: 250px;
+  background-image: url('/img/Skills-FE-bg.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.skill-icon {
+  height: 50px;
+  width: 50px;
+}
+
+@media (min-width: 40rem) {
+  .center-col {
+    margin-left: 25%;
   }
 }

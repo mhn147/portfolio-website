@@ -59,6 +59,15 @@ main {
     margin: 0.5rem 0 !important;
   }
 }
+@media (min-width: 40rem) {
+  .only-on-collapse {
+    display: none;
+  }
+}
+.only-on-collapse {
+  margin-bottom: 1rem;
+}
+
 /* End Navbar */
 
 .personal-pic-img {

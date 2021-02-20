@@ -31,12 +31,14 @@ main {
 /* End Common */
 
 /* Navbar */
-.brand {
-  font-size: 1.5rem;
+.brand-img {
+  height: 45px;
+  width: 45px;
 }
 @media (min-width: 40rem) {
-  .brand {
-    font-size: 2rem;
+  .brand-img {
+    height: 60px;
+    width: 60px;
   }
 }
 .navbar-items-container {

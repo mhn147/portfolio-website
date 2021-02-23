@@ -40,7 +40,7 @@
         </div>
         <div class="col-12">
           <div class="row d-flex justify-content-center">
-            <div class="form-container col-12 col-sm-6 m-2 text-white p-5">
+            <div class="form-container col-12 col-sm-8 m-2 text-white p-5">
               <form>
                 <div class="row">
                   <div class="col-12 col-sm-6">
@@ -49,7 +49,9 @@
                         >Name</label
                       >
                       <input
-                        type="email"
+                        type="text"
+                        name="name"
+                        required
                         class="form-control text-light"
                         id="nameInput"
                         aria-describedby="emailHelp"
@@ -63,6 +65,8 @@
                       >
                       <input
                         type="email"
+                        name="email"
+                        required
                         class="form-control text-light"
                         id="emailInput"
                         aria-describedby="emailHelp"
@@ -75,9 +79,11 @@
                     >Message</label
                   >
                   <textarea
+                    name="message"
+                    required
                     class="form-control text-light"
                     id="messageInput"
-                    rows="5"
+                    rows="8"
                   ></textarea>
                 </div>
                 <div class="text-center mt-5">

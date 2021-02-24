@@ -69,7 +69,10 @@ main {
 .only-on-collapse {
   margin-bottom: 1rem;
 }
-
+.nav-icon {
+  height: 35px;
+  width: 35px;
+}
 /* End Navbar */
 
 .personal-pic-img {
@@ -94,13 +97,6 @@ main {
   }
 }
 
-/* @media (min-width: 40rem) {
-  .projects-container {
-    max-height: 82vh !important;
-    overflow-y: auto;
-  }
-} */
-
 .skill-container {
   height: 220px;
   background-size: cover;
@@ -119,7 +115,7 @@ main {
   background-image: url('../img/Skills-tools-bg.svg');
 }
 
-.skill-icon {
+.icon {
   height: 50px;
   width: 50px;
 }

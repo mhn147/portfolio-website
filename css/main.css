@@ -108,15 +108,15 @@ main {
 }
 
 .skill-container.front-end-bg {
-  background-image: url('/img/Skills-FE-bg.svg');
+  background-image: url('../img/Skills-FE-bg.svg');
 }
 
 .skill-container.back-end-bg {
-  background-image: url('/img/Skills-BE-bg.svg');
+  background-image: url('../img/Skills-BE-bg.svg');
 }
 
 .skill-container.tools-bg {
-  background-image: url('/img/Skills-tools-bg.svg');
+  background-image: url('../img/Skills-tools-bg.svg');
 }
 
 .skill-icon {

@@ -54,7 +54,7 @@
       <div class="col-12">
         <div class="row d-flex justify-content-center">
           <div class="form-container col-12 col-sm-8 m-2 text-white p-5">
-            <form>
+            <form action="mail.php" method="post" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-12 col-sm-6">
                   <div class="mb-3">
@@ -74,7 +74,7 @@
                 <textarea name="message" required class="form-control text-light" id="messageInput" rows="8"></textarea>
               </div>
               <div class="text-center mt-5">
-                <button type="submit" class="btn btn-outline-light p-2 cta-btn">
+                <button type="submit" name="send" value="send" class="btn btn-outline-light p-2 cta-btn">
                   Submit
                 </button>
               </div>
